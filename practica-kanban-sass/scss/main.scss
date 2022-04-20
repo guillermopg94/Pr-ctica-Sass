@@ -1,0 +1,53 @@
+@import 'variables';
+@import 'functions';
+
+main{
+  background-image: $background-Image;
+    @extend %content-main;
+}
+html, body{
+    @extend %properties-of-html;
+    font-family: $font;
+}
+#kanban{
+   @extend %content-kanban;
+}
+article{
+@extend %style-article;
+}
+.card{
+    @extend %style-card;
+}
+.card:hover{
+    background-color: $card-hover;
+}
+.card:hover .boton-cerrar {
+    background-color: $boton-cerrar-hover;
+}
+.boton-cerrar{
+    @extend %boton-cerrar;
+}
+h1{
+    @extend %h1-style;
+}
+h2{
+    @extend %h2-style;
+}
+h3, p{
+    @extend %h3-y-p;
+}
+.tags{
+    @extend %tags;
+}
+.tag-front{
+    @extend %tag-front;
+}
+.tag-back{
+    @extend %tag-back;
+}
+.tag-device{
+    @extend %tag-device;
+}
+i{
+    @extend %i;
+}
